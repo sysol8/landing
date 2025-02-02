@@ -1,0 +1,79 @@
+.header {
+    background-color: var(--background-light);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 40px 168px 88px;
+    gap: 88px;
+}
+
+.header__socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__socials-list {
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    width: 20px;
+    height: 20px;
+}
+
+.header__employee-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 96px;
+}
+
+.employee-info_column {
+    align-items: center;
+}
+
+.employee-info-text {
+    margin-bottom: 36px;
+}
+
+.employee-info-profession {
+    color: var(--content-accent);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.employee-info-name {
+    font-size: 50px;
+    margin-bottom: 24px;
+}
+
+.employee-info-description {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.header__consultation_button {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--content-accent);
+    padding: 16px 24px;
+    margin-right: 164px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 0 rgba(182, 133, 0, 1);
+}
+
+
+.employee-info-photo_container {
+    min-width: 384px;
+    min-height: 384px;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+    place-content: center;
+}
+
