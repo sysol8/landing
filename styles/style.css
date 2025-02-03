@@ -174,15 +174,15 @@
 }
 
 .project-1 {
-  background-image: url("/images/src/portfolio1.png");
+  background-image: url("../images/src/portfolio1.png");
 }
 
 .project-2 {
-  background-image: url("/images/src/portfolio2.png");
+  background-image: url("../images/src/portfolio2.png");
 }
 
 .project-3 {
-  background-image: url("/images/src/portfolio3.png");
+  background-image: url("../images/src/portfolio3.png");
 }
 
 .card__button {
