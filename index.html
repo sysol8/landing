@@ -1,68 +1,325 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./fonts/fonts.css" >
-    <link rel="stylesheet" href="./styles/global.css" >
-    <link rel="stylesheet" href="./styles/style.css" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Фрилансер Петр Федоров</title>
   </head>
   <body>
     <header class="header">
-        <div class="header__socials">
-            <a class="social-link__main">
-                <img class="logo" src="./images/icons/logo.svg">
+      <div class="header__socials">
+        <a class="social-link logo-link">
+          <img class="logo" src="./images/icons/logo.svg" alt="Лого" />
+        </a>
+        <ul class="header__socials-list">
+          <li class="header__socials-list-item">
+            <a class="social-link" href="" target="_blank">
+              <img
+                class="social-icon"
+                src="./images/icons/github.svg"
+                alt="Гитхаб"
+              />
             </a>
-            <ul class="header__socials-list">
-                <li class="header__socials-list-item">
-                    <a class="social-link" target="_blank">
-                        <img class="social-icon" src="./images/icons/github.svg">
-                    </a>
-                </li>
-                <li class="header__socials-list-item">
-                    <a class="social-link" target="_blank">
-                        <img class="social-icon" src="./images/icons/twitter.svg">
-                    </a>
-                </li>
-                <li class="header__socials-list-item">
-                    <a class="social-link" target="_blank">
-                        <img class="social-icon" src="./images/icons/instagram.svg">
-                    </a>
-                </li>
-                <li class="header__socials-list-item">
-                    <a class="social-link" target="_blank">
-                        <img class="social-icon" src="./images/icons/facebook.svg">
-                    </a>
-                </li>
-            </ul>
+          </li>
+          <li class="header__socials-list-item">
+            <a class="social-link" href="" target="_blank">
+              <img
+                class="social-icon"
+                src="./images/icons/twitter.svg"
+                alt="Твиттер"
+              />
+            </a>
+          </li>
+          <li class="header__socials-list-item">
+            <a class="social-link" href="" target="_blank">
+              <img
+                class="social-icon"
+                src="./images/icons/instagram.svg"
+                alt="Инстаграм"
+              />
+            </a>
+          </li>
+          <li class="header__socials-list-item">
+            <a class="social-link" href="" target="_blank">
+              <img
+                class="social-icon"
+                src="./images/icons/facebook.svg"
+                alt="Фейсбук"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <article class="header__employee-info">
+        <div class="employee-info__column">
+          <div class="employee-info__text">
+            <h4 class="employee-info-profession">Фрилансер</h4>
+            <h1 class="employee-info-name">Петр Федоров</h1>
+            <p class="employee-info-description">
+              Разрабатываю сайты для малого и среднего бизнеса. У меня можно
+              заказать дизайн и верстку небольшого сайта или интернет-магазина
+            </p>
+          </div>
+          <button class="header__consultation-button" type="button">
+            Бесплатная консультация
+          </button>
         </div>
-        <article class="header__employee-info">
-            <div class="employee-info_column">
-                <div class="employee-info-text">
-                    <h4 class="employee-info-profession">
-                        Фрилансер
-                    </h4>
-                    <h1 class="employee-info-name">
-                        Петр Федоров
-                    </h1>
-                    <p class="employee-info-description">
-                        Разрабатываю сайты для малого
-                        и среднего бизнеса. 
-                        У меня можно заказать дизайн и 
-                        верстку небольшого сайта 
-                        или интернет-магазина
-                    </p>
-                </div>
-                <button class="header__consultation_button" type="button">Бесплатная консультация</button>
-            </div>
-            <div class="employee-info_column">
-                <div class="employee-info-photo_container">
-                    <img class="employee-photo" src="./images/src/Keanu.png" alt="Фотография работника">
-                </div>
-            </div>
-        </article>
+        <div class="employee-info_column">
+          <div class="employee-info-photo__container">
+            <img
+              class="employee-photo"
+              src="./images/src/Keanu.png"
+              alt="Фотография работника"
+            />
+          </div>
+        </div>
+      </article>
     </header>
+    <main>
+      <section class="features">
+        <h2 class="section__header">Со мной удобно работать</h2>
+        <ul class="features__list">
+          <li class="features__list-item">
+            <img
+              class="feature__icon"
+              src="./images/icons/offer-img.svg"
+              alt="Иконка договор"
+            />
+            <h3 class="feature__header">По договору</h3>
+            <p class="feature__description">
+              Предоставлю все документы для бухгалтерии: договоры, счета и акты.
+              Работаю как ИП без НДС.
+            </p>
+          </li>
+          <li class="features__list-item">
+            <img
+              class="feature__icon"
+              src="./images/icons/deadline-img.svg"
+              alt="Иконка календарь"
+            />
+            <h3 class="feature__header">Точно в срок</h3>
+            <p class="feature__description">
+              В договоре прописана моя ответственность за срок проекта. Если
+              просрочу — плачу неустойку.
+            </p>
+          </li>
+          <li class="features__list-item">
+            <img
+              class="feature__icon"
+              src="./images/icons/agreement-img.svg"
+              alt="Иконка рукопожатие"
+            />
+            <h3 class="feature__header">Ценник под вас</h3>
+            <p class="feature__description">
+              Если у вас нетиповой проект, сделаю рассчет цены за работу и
+              объясню, как складывается цена.
+            </p>
+          </li>
+          <li class="features__list-item">
+            <img
+              class="feature__icon"
+              src="./images/icons/steps-img.svg"
+              alt="Иконка план"
+            />
+            <h3 class="feature__header">Промежуточные итоги</h3>
+            <p class="feature__description">
+              Показываю работу поэтапно, а не в последий момент перед крайним
+              сроком.
+            </p>
+          </li>
+          <li class="features__list-item">
+            <img
+              class="feature__icon"
+              src="./images/icons/storage-img.svg"
+              alt="Иконка технологии"
+            />
+            <h3 class="feature__header">Хостинг и домен</h3>
+            <p class="feature__description">
+              Если мы договорились о цене проекта, в неё входит всё: домен и
+              хостинг на год + SSL сертификат.
+            </p>
+          </li>
+          <li class="features__list-item">
+            <img
+              class="feature__icon"
+              src="./images/icons/conversation-img.svg"
+              alt="Иконка разговор"
+            />
+            <h3 class="feature__header">Не брошу после сдачи</h3>
+            <p class="feature__description">
+              Научу вас или вашего сотрудника пользоваться сайтом, запишу
+              видео-инструкции.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <h2 class="section__header">Выполненные проекты</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__list-item">
+            <article class="card project-1">
+              <div class="overlay"></div>
+              <h4 class="card__header">The curious corner of chamarel</h4>
+              <button class="card__button">Посмотреть</button>
+            </article>
+          </li>
+          <li class="portfolio__list-item">
+            <article class="card project-2">
+              <div class="overlay"></div>
+              <h4 class="card__header">Gymkhana club golf course</h4>
+              <button class="card__button">Посмотреть</button>
+            </article>
+          </li>
+          <li class="portfolio__list-item">
+            <article class="card project-3">
+              <div class="overlay"></div>
+              <h4 class="card__header">
+                Tamarind falls hiking trip - full day
+              </h4>
+              <button class="card__button">Посмотреть</button>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <ul class="gallery__list">
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery01.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery02.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery03.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery04.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery05.png" />
+          </li>
+          <li class="gallery__list-item video">
+            <div class="video__overlay">
+              <span class="video-lenght">
+                0:28
+                <img
+                  class="video-icon"
+                  src="./images/icons/play_circle_filled.svg"
+                />
+              </span>
+            </div>
+            <img class="gallery__image" src="./images/src/gallery06.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery07.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery08.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery09.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery10.png" />
+          </li>
+          <li class="gallery__list-item video">
+            <div class="video__overlay">
+              <span class="video-lenght">
+                0:45
+                <img
+                  class="video-icon"
+                  src="./images/icons/play_circle_filled.svg"
+                />
+              </span>
+            </div>
+            <img class="gallery__image" src="./images/src/gallery11.png" />
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__image" src="./images/src/gallery12.png" />
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="section__header footer__header">Свяжитесь со мной</h2>
+      <div class="column__container">
+        <article class="footer__column">
+          <form class="contact-me" method="get" name="contact-me">
+            <h5 class="form__header">
+              Можете просто оставить заявку, я позвоню вам сегодня
+            </h5>
+            <div class="form__fields">
+              <div class="form__input__container">
+                <img class="input__icon" src="./images/icons/user-icon.svg" />
+                <input class="form__input" type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="form__input__container">
+                <img class="input__icon" src="./images/icons/phone-icon.svg" />
+                <input
+                  class="form__input"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                />
+              </div>
+            </div>
+            <button type="submit" class="form__button">
+              Бесплатная консультация
+            </button>
+          </form>
+        </article>
+        <article class="footer__column">
+          <div class="footer__contacts">
+            <address class="address">
+              <span class="address__header">Телефон</span>
+              <a class="address-link" href="tel:+79991234567"
+                >+7 999 123 45 67</a
+              >
+            </address>
+            <address class="address">
+              <span class="address__header">Почта</span>
+              <a class="address-link" href="mailto:ivanov@mail.ru"
+                >ivanov@mail.ru</a
+              >
+            </address>
+            <address class="address">
+              <span class="address__header">Соцсети</span>
+              <ul class="header__socials-list">
+                <li class="header__socials-list-item">
+                  <a class="social-link" target="_blank">
+                    <img class="social-icon" src="./images/icons/github.svg" />
+                  </a>
+                </li>
+                <li class="header__socials-list-item">
+                  <a class="social-link" target="_blank">
+                    <img class="social-icon" src="./images/icons/twitter.svg" />
+                  </a>
+                </li>
+                <li class="header__socials-list-item">
+                  <a class="social-link" target="_blank">
+                    <img
+                      class="social-icon"
+                      src="./images/icons/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="header__socials-list-item">
+                  <a class="social-link" target="_blank">
+                    <img
+                      class="social-icon"
+                      src="./images/icons/facebook.svg"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <a class="policy">Политика конфиденциальности</a>
+        </article>
+      </div>
+    </footer>
   </body>
 </html>

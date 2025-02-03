@@ -1,8 +1,8 @@
 :root {
-    --background-light: #1b2944;
-    --background-dark: #141f35;
-    --content-accent: rgb(255, 187, 1);
-    --image-button-accent: rgb(236, 31, 70);
+  --background-light: #1b2944;
+  --background-dark: #141f35;
+  --content-accent: rgb(255, 187, 1);
+  --button-accent: rgb(236, 31, 70);
 }
 
 *,
@@ -13,20 +13,22 @@
 }
 
 body {
-    margin: 0 auto;
-    font-family: Roboto, Arial, sans-serif;
-    width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 ul {
-    list-style-type: none;
+  padding-inline-start: 0;
+  list-style-type: none;
 }
 
 a {
-    cursor: pointer;
-    font-family: inherit;
+  font-family: inherit;
+  cursor: pointer;
 }
 
-img {
-    width: 100%;
+button {
+  font-family: inherit;
+  cursor: pointer;
 }

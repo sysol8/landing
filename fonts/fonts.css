@@ -15,3 +15,12 @@
     font-display: swap;
     font-weight: 400;
 }
+
+@font-face {
+    font-family: Roboto;
+    src:
+        local("Roboto"),
+        url(./Roboto-Medium.ttf) format(".ttf");
+    font-display: swap;
+    font-weight: 500;
+}

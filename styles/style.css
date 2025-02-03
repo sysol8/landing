@@ -1,79 +1,364 @@
 .header {
-    background-color: var(--background-light);
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 40px 168px 88px;
-    gap: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  padding: 40px 168px 88px;
+  color: white;
+  background-color: var(--background-light);
 }
 
 .header__socials {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__socials-list {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .social-link {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .header__employee-info {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 96px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 96px;
 }
 
-.employee-info_column {
-    align-items: center;
+.employee-info__column {
+  align-content: center;
 }
 
 .employee-info-text {
-    margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .employee-info-profession {
-    color: var(--content-accent);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 12px;
+  margin-bottom: 12px;
+  color: var(--content-accent);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .employee-info-name {
-    font-size: 50px;
-    margin-bottom: 24px;
+  margin-bottom: 24px;
+  font-size: 50px;
 }
 
 .employee-info-description {
-    font-size: 16px;
-    line-height: 28px;
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: 28px;
 }
 
-.header__consultation_button {
-    line-height: 16px;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: var(--content-accent);
-    padding: 16px 24px;
-    margin-right: 164px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 4px 0 rgba(182, 133, 0, 1);
+.header__consultation-button {
+  margin-right: 164px;
+  border-style: none;
+  border-radius: 6px;
+  padding: 16px 24px;
+  box-shadow: 0 4px 0 rgba(182, 133, 0, 1);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: var(--content-accent);
 }
 
-
-.employee-info-photo_container {
-    min-width: 384px;
-    min-height: 384px;
-    border-radius: 50%;
-    border: 1px solid white;
-    overflow: hidden;
-    place-content: center;
+.employee-info-photo__container {
+  display: flex;
+  place-content: center;
+  width: 384px;
+  height: 384px;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
+.employee-photo {
+  object-fit: cover;
+}
+
+/* Конец стилей Header */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 88px 168px;
+  color: white;
+  background-color: var(--background-dark);
+}
+
+.section__header {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 48px;
+  column-gap: 16px;
+}
+
+.feature__icon {
+  margin-bottom: 20px;
+}
+
+.feature__header {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.feature__description {
+  line-height: 28px;
+}
+
+/* Конец стилей фич */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 88px 168px;
+  color: white;
+  background-color: var(--background-light);
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 16px;
+  min-height: 334px;
+  border-radius: 6px;
+  padding: 0 0 32px 32px;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0) 35%,
+    rgba(33, 62, 96, 1) 100%
+  );
+}
+
+.card__header {
+  min-height: 56px;
+  margin-right: 108px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.project-1 {
+  background-image: url("/images/src/portfolio1.png");
+}
+
+.project-2 {
+  background-image: url("/images/src/portfolio2.png");
+}
+
+.project-3 {
+  background-image: url("/images/src/portfolio3.png");
+}
+
+.card__button {
+  width: 120px;
+  border-style: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 0 rgba(206, 28, 62, 1);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--button-accent);
+}
+
+/* конец стилей портфолио */
+
+.gallery {
+  padding: 88px 168px;
+  background-color: var(--background-dark);
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  gap: 16px;
+}
+
+.gallery__list-item {
+  display: flex;
+  place-content: center;
+  width: 100%;
+  height: 224px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video {
+  position: relative;
+}
+
+.video__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.video-lenght {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 8px 0 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.footer {
+  padding: 88px 168px;
+  color: white;
+  background-color: var(--background-light);
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 38px 32px 42px;
+  box-shadow: -5px 5px 0 rgba(255, 196, 29, 1);
+  background-color: white;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__header {
+  margin-bottom: 47px;
+}
+
+.form__header {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.form__input__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  padding: 20px 35px 19px 32px;
+  box-shadow: 0px 3px 10px 0px rgba(199, 199, 199, 0.25) inset;
+  background-color: rgb(248, 248, 248, 1);
+}
+
+.form__button {
+  border: none;
+  border-radius: 6px;
+  padding: 16px 42px;
+  box-shadow: 0 4px rgba(182, 133, 0, 1);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: rgba(255, 187, 1, 1);
+}
+
+.form__input {
+  border: none;
+  background-color: inherit;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.column__container {
+  display: flex;
+  gap: 96px;
+}
+
+.footer__contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  column-gap: 96px;
+}
+
+.address__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.address-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-style: normal;
+}
+
+.policy {
+  color: rgb(148, 148, 148);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
